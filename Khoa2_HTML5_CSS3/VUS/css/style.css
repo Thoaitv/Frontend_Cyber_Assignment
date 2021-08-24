@@ -1,0 +1,157 @@
+/**
+ * /* GLOBAL
+ *
+ * @format
+ */
+
+/* 1(vw, vh) = 1% so với kích thước width của màn hình hiện tại */
+/* em: đơn vị thay đổi theo font-size trong thẻ đó
+(Đơn vị tương đối) */
+* {
+  /* Giúp giữ nguyên khoảng cách giữa các thành phần khi dàn layout với float */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+.clear {
+  clear: both;
+}
+.line {
+  text-align: center;
+}
+/* HEADER */
+.header__logoImg {
+  float: left;
+}
+.header__slogan {
+  float: right;
+  margin-right: 100px;
+}
+.header__navbar ul {
+  list-style: none;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  text-align: center;
+  padding: 15px 0;
+}
+.header__navbar li {
+  display: inline;
+}
+.header__navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 1vw;
+  margin: 0 0.75em;
+}
+.header__navbar .active {
+  border-bottom: 3px solid red;
+}
+.header__navbar li a:hover {
+  border-bottom: 3px solid red;
+}
+
+/* CAROUSEL */
+.carousel {
+  background-image: url("../img/slider_1.png");
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* INTRO */
+.intro,
+.program {
+  text-align: center;
+}
+h2 {
+  text-transform: uppercase;
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* PROGRAMS */
+.program__item {
+  width: 25%;
+  float: left;
+  padding: 0 10px;
+}
+.program__item img {
+  width: 100%;
+}
+.program__item h3 {
+  color: red;
+  margin: 10px 0;
+}
+.program__item p {
+  margin: 0px 0;
+}
+
+/* NEWS */
+.news {
+  margin-bottom: 30px;
+}
+.news__left {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+}
+.news__right {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.news__text img {
+  width: 100%;
+  /* display: block; */
+}
+.news__right .news__small-item {
+  width: 49%;
+  float: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.news__text {
+  position: relative;
+}
+.news__text p {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.356);
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+}
+.news__left .news__text p {
+  font-size: 25px;
+}
+.news__text hr {
+  margin: 0;
+  background-color: brown;
+  height: 5px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: red;
+  padding: 20px 20px 30px;
+}
+.footer img {
+  float: left;
+}
+.footer p {
+  float: right;
+  width: 50%;
+  text-align: justify;
+  margin: 5px 20px 0;
+  color: white;
+}

@@ -1,0 +1,247 @@
+/** @format */
+
+body,
+html {
+    box-sizing: border-box;
+    font-family: "Asap", sans-serif;
+    margin: 0;
+    background-image: url("../img/bg.jpg");
+    width: 82%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+.header,
+.products,
+.banner,
+.footer {
+    background-color: aliceblue;
+}
+/* HEADER */
+.header {
+    font-weight: bold;
+}
+.header__logo {
+    float: left;
+    width: 50%;
+    display: inline;
+}
+.header__logo-right {
+    float: right;
+}
+.header__logo-right {
+    margin: 20px 40px;
+}
+.header__logo {
+    margin: 20px;
+}
+.header__navbar {
+    height: 60px;
+    background-color: rgb(187 175 175);
+}
+.header__navbar-left {
+    float: left;
+    width: 50%;
+    margin-top: 5px;
+}
+.header__navbar-left li a {
+    color: white;
+}
+.header__navbar-left li:hover {
+    background-color: black;
+}
+.header__navbar-left li:first-child {
+    background-color: black;
+}
+.header__navbar-left li {
+    padding: 20px;
+}
+.header__navbar-right {
+    float: left;
+    width: 50%;
+    margin-top: 21px;
+}
+.header__navbar-right p {
+    display: inline;
+}
+.header__navbar-right a {
+    float: right;
+    margin-right: 20px;
+}
+
+.header__navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.header__navbar a {
+    text-decoration: none;
+    display: inline;
+    text-transform: uppercase;
+    /* margin-right: 15px; */
+    color: black;
+}
+.header__navbar-right a {
+    color: red;
+}
+.header__navbar li {
+    display: inline;
+    padding-left: 20px;
+}
+.header__navbar p:first-child {
+    color: #828282;
+}
+.header__navbar p:nth-child(2) {
+    margin: 0 50px 0 20px;
+}
+
+/* CAROULSE */
+.carousel {
+    background-image: url("../img/09830872986cd54cb4917baf6479d14c.png");
+    height: 500px;
+    background-size: cover;
+}
+
+/* PRODUCTS */
+.products__menu {
+    float: left;
+    width: 23%;
+}
+.products__content {
+    float: left;
+    width: 77%;
+}
+.products__menu p {
+    padding: 30px 20px 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.products__menu p:last-child {
+    color: red;
+}
+
+.product__item {
+    width: 28%;
+    float: left;
+    background-color: #16777215;
+    margin-right: 41px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.product__item img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product__item span {
+    font-size: 15px;
+    font-weight: bold;
+}
+.product__item h3 {
+    padding-left: 20px;
+}
+
+.product__item ul {
+    /* padding-left: 34px; */
+    width: 75%;
+}
+.product__item p {
+    color: #828282;
+}
+.product__item i {
+    text-align: center;
+    display: block;
+}
+.product__button-option {
+    float: left;
+    width: 50%;
+}
+.product__button-order {
+}
+.product__button-order button,
+.product__button-option button {
+    background-color: red;
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+.product__button-option a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Asap", sans-serif;
+    font-size: 15px;
+}
+.product__button-order a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Asap", sans-serif;
+    font-size: 15px;
+}
+.product__button-option a {
+    text-decoration: none;
+}
+
+/* BANNER */
+.banner {
+    float: left;
+    width: 100%;
+    padding: 50px 0;
+}
+.banner__left {
+    width: 49%;
+    background-image: url("../img/55e251880deec0ecc66ec6ad17e10832.png");
+    height: 200px;
+    float: left;
+    background-size: cover;
+}
+.banner__right {
+    width: 49%;
+    float: right;
+    background-image: url("../img/71705e87d5d8af3ffcd70fafab3548d3.png");
+    height: 200px;
+    background-size: cover;
+}
+
+/* FOOTER */
+.footer {
+    margin-bottom: 20px;
+}
+.footer__logo {
+    text-align: center;
+}
+
+.footer__item {
+    float: left;
+    width: 20%;
+    padding: 50px 0;
+}
+.footer__item h3 {
+    margin: 10px 0;
+}
+.footer__item p {
+    margin: 5px 0;
+}
+.footer__social img {
+    height: 40px;
+    padding-left: 10px;
+    float: right;
+}
+.footer__item-email button {
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-family: "Asap", sans-serif;
+    border-radius: 5px;
+}
+.footer__item-email input {
+    height: 34px;
+    width: 130px;
+    border: white;
+}
